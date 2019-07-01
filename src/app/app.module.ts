@@ -20,6 +20,7 @@ import { MedicamentosModule } from './medicamentos/medicamentos.module';
 import { MedicosCadastroComponent } from './medicos/medicos-cadastro/medicos-cadastro.component';
 import { ReceitasCadastroComponent } from './receitas/receitas-cadastro/receitas-cadastro.component';
 import { ReceitasModule } from './receitas/receitas.module';
+import { ReceitasPesquisaComponent } from './receitas/receitas-pesquisa/receitas-pesquisa.component';
 
 const rotas: Routes = [
   {path: '', redirectTo:'pacientes', pathMatch:'full'},
@@ -32,7 +33,7 @@ const rotas: Routes = [
   {path: 'medicos', component: MedicosPesquisaComponent},
   {path: 'medicos/novo', component: MedicosCadastroComponent},
   {path: 'medicos/:id', component: MedicosCadastroComponent},
-  // {path: 'receitas', component: ReceitasPesquisaComponent},
+  {path: 'receitas', component: ReceitasPesquisaComponent},
   {path: 'receitas/novo', component: ReceitasCadastroComponent},
   {path: 'receitas/:id', component: ReceitasCadastroComponent},
   // {path: 'produtos/novo', component: ProdutosCadastroComponent},

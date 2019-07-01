@@ -11,21 +11,21 @@
 
             <div class="ui-g-12 ui-md-9 ui-fluid">
                 <label>Médico</label>
-              <p-dropdown [options]="medicos"
-                [(ngModel)]="medico.id"
+                <p-dropdown [options]="medicos"
+                [(ngModel)]="receita.medico.id"
                 name="medico" [filter]="true">
-              </p-dropdown>
+                </p-dropdown>
             </div>
 
             <div class="ui-g-12 ui-md-9 ui-fluid">
                 <label>Paciente</label>
-              <p-dropdown [options]="pacientes"
-                [(ngModel)]="paciente.id"
+                <p-dropdown [options]="pacientes"
+                [(ngModel)]="receita.paciente.id"
                 name="paciente" [filter]="true">
-              </p-dropdown>
+                </p-dropdown>
             </div>
 
-            <!-- <div class="ui-g-12 ui-md-9 ui-fluid">
+            <div class="ui-g-12 ui-md-9 ui-fluid">
                 <p-pickList [source]="especialidades" [target]="receita.especialidades" sourceHeader="Especialidades" targetHeader="Selecionadas"
                 [responsive]="true" [dragdrop]="true" [showSourceControls]="false" [showTargetControls]="false">
                 <ng-template let-esp pTemplate="item">
@@ -34,7 +34,7 @@
                   </div>
                 </ng-template>
               </p-pickList>
-            </div> -->
+            </div>
 
             <div class="ui-g-12">
               <button pButton type="submit" label="Salvar" [disabled]="f.invalid" class=" boxButton"></button>
